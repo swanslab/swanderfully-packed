@@ -1,4 +1,5 @@
-tellraw @a "Datpack loaded aaaaaaaaa"
+# Makes the Faunavigator speaks
+execute as faunaceres run say The most Swanderful Datapack (real) has bean (re)loaded!
 
 # The funni for my sussoyaki
 scoreboard objectives add swanyakiRNG dummy
