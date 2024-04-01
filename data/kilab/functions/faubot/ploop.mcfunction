@@ -6,3 +6,6 @@ execute as faunaceres at @s unless entity @a[distance=..2,name=!"faunaceres",lim
 
 # Sprinting has to be in the loop since it stops working occasionally
 player faunaceres sprint
+
+# Auto spawn & loop stop when killed
+execute if score faunaceres fau.ded matches 1 run function kilab:faubot/pstop

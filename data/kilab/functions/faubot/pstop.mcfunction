@@ -1,9 +1,9 @@
 # Stops Faunavigator's PvP Mode
-
-# Reverts Fauna's stats and feeds her
-effect clear faunaceres
-effect give faunaceres minecraft:saturation 10 100
-
-# Stops all of her movements
-player faunaceres stop
 schedule clear kilab:faubot/ploop
+
+# Auto respawn at Nekoland
+execute positioned -222 64 -392 run player faunaceres spawn
+
+# Resets dedcount and removes tag
+scoreboard players reset faunaceres fau.ded
+tag faunaceres remove fau.combat
