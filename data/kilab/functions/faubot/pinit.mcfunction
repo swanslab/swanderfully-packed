@@ -8,8 +8,8 @@ give faunaceres enchanted_golden_apple{AttributeModifiers:[{Amount:9.0d,Attribut
 # Makes Fauna "run"
 player faunaceres move forward
 
-# Randomly attacks the opponent every 0.5-2.5 secs
-player faunaceres attack randomly uniform 10 50
+# Randomly attacks the opponent every 0.5-1.5 secs
+player faunaceres attack randomly uniform 10 30
 
 # Randomly jumps every 1-5 secs so it's more *natural*
 player faunaceres jump randomly uniform 20 100
@@ -17,5 +17,10 @@ player faunaceres jump randomly uniform 20 100
 # Regen since I don't wanna implement food eating
 effect give faunaceres minecraft:regeneration infinite 0
 
-# Res too since I don't want to deal with setting up armor either
+# Armor without armor
 effect give faunaceres minecraft:resistance infinite 3
+effect give faunaceres health_boost infinite 4
+effect give faunaceres instant_health 1 100
+
+# DMG adjustment
+effect give faunaceres strength infinite 4

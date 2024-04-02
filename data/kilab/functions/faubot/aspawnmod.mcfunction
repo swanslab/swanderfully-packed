@@ -8,5 +8,8 @@ execute positioned -222 64 -392 run player faunaceres spawn
 schedule clear kilab:faubot/ploop
 
 # Removes "Combat Mode" to ensure things work properly
+player faunaceres stop
 effect clear faunaceres
+clear faunaceres
+gamemode creative faunaceres
 tag faunaceres remove fau.combat
