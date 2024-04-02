@@ -1,4 +1,4 @@
-# Commands that need to run (almost) all of the time during PvP
+# Commands that need to run all of the time during PvP
 schedule function kilab:faubot/ploop 1t
 
 # Makes Fauna track the opponent so she moves properly
@@ -6,6 +6,3 @@ execute as faunaceres at @s unless entity @a[distance=..2,name=!"faunaceres",lim
 
 # Sprinting has to be in the loop since it stops working occasionally
 player faunaceres sprint
-
-# Auto spawn & loop stop when killed
-execute if score faunaceres fau.ded matches 1 run function kilab:faubot/pstop

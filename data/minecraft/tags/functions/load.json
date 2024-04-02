@@ -1,5 +1,5 @@
 { 
     "values": [
-        "kilab:load","kilab:items","kilab:revoke"
+        "kilab:load","kilab:items","kilab:revoke","kilab:faubot/autospawn"
     ]
 }

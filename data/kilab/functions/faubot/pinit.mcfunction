@@ -15,7 +15,7 @@ player faunaceres attack randomly uniform 10 50
 player faunaceres jump randomly uniform 20 100
 
 # Regen since I don't wanna implement food eating
-effect give faunaceres minecraft:regeneration infinite 0 true
+effect give faunaceres minecraft:regeneration infinite 0
 
 # Res too since I don't want to deal with setting up armor either
-effect give faunaceres minecraft:resistance infinite 3 true
+effect give faunaceres minecraft:resistance infinite 3

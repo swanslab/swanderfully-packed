@@ -3,7 +3,7 @@ execute as faunaceres run say ⏪ The most Swanderful Datapack (real) has bean (
 
 # Faunav's combat data
 scoreboard objectives add fau.ded deathCount
-scoreboard players reset faunaceres fau.ded
+scoreboard players set faunaceres fau.ded 0
 
 # The funni for my sussoyaki
 scoreboard objectives add swanyakiRNG dummy
