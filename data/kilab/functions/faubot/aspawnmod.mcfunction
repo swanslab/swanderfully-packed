@@ -2,7 +2,7 @@
 scoreboard players set faunaceres fau.ded 0
 
 # Respawns Fauna at Nekoland
-execute positioned -222 64 -392 run player faunaceres spawn
+execute positioned -129 242 -474 run player faunaceres spawn
 
 # Stops PvP loop
 schedule clear kilab:faubot/ploop
