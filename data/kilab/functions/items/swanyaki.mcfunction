@@ -1,7 +1,7 @@
 # We are committing Aha with this one
 
 # EXPLOSION!!
-execute if entity @s[scores={swanyakiRNG=1}] run summon creeper ~ ~ ~ {Fuse:0}
+execute if entity @s[scores={swanyakiRNG=1}] run summon creeper ~ ~ ~ {Fuse:0,CustomName:Entroyaki}
 execute if entity @s[scores={swanyakiRNG=1}] run tellraw @a[distance=..16] "Holy shit, an explosive takoyaki!"
 
 # Jeez
@@ -29,7 +29,7 @@ execute if entity @s[scores={swanyakiRNG=6}] run effect give @a[distance=..16] l
 execute if entity @s[scores={swanyakiRNG=6}] run tellraw @a[distance=..16] "The Creator has blessed you with a fortune!"
 
 # K A B O O M
-execute if entity @s[scores={swanyakiRNG=7}] run summon creeper ~ ~ ~ {Fuse:0,ExplosionRadius:16}
+execute if entity @s[scores={swanyakiRNG=7}] run summon creeper ~ ~ ~ {Fuse:0,ExplosionRadius:16,CustomName:Takoppenheimer}
 execute if entity @s[scores={swanyakiRNG=7}] run tellraw @a[distance=..16] "YOU GOT OPPENHEIMER'D!!!"
 
 # Bright
@@ -46,7 +46,7 @@ execute if entity @s[scores={swanyakiRNG=10}] run tellraw @a[distance=..16] "Bet
 
 # TP
 execute if entity @s[scores={swanyakiRNG=11}] run spreadplayers ~ ~ 0 128 false @a[distance=..16]
-execute if entity @s[scores={swanyakiRNG=11}] run tellraw @a[distance=..16] "Kris, where the fuck are we!?"
+execute if entity @s[scores={swanyakiRNG=11}] run tellraw @s "Kris, where the fuck are we!?"
 
 # F a r t
 execute if entity @s[scores={swanyakiRNG=12}] run playsound entity.firework_rocket.large_blast_far master @a[distance=..16]

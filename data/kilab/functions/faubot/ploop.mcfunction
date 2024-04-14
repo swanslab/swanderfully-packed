@@ -2,7 +2,12 @@
 schedule function kilab:faubot/ploop 1t
 
 # Makes Fauna track the opponent so she moves properly
-execute as faunaceres at @s unless entity @a[distance=..2,name=!"faunaceres",limit=1,sort=nearest] run execute at @a[name=!"faunaceres",distance=..16,limit=1,sort=nearest] run player faunaceres look at ~ ~1.5 ~
+execute as faunavigator at @s unless entity @a[distance=..2,name=!"faunavigator",limit=1,sort=nearest] run execute at @a[name=!"faunavigator",distance=..16,limit=1,sort=nearest] run player faunavigator look at ~ ~1.5 ~
 
 # Sprinting has to be in the loop since it stops working occasionally
-player faunaceres sprint
+player faunavigator sprint
+
+# Stops PvP mode if the opponent loses
+execute if score faunavigator fau.kill matches 1 run player faunavigator kill
+execute if score faunavigator fau.kill matches 1 run schedule clear kilab:faubot/ploop
+execute if score faunavigator fau.ded matches 1 run schedule clear kilab:faubot/ploop
