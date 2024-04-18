@@ -1,3 +1,5 @@
+# General commands that need to run all of the time
+
 # Arr En Gee
 execute as @a[tag=!kilab.debug] store result score @s kilab.entroyaki run random value 1..24
 
