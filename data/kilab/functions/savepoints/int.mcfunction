@@ -5,4 +5,5 @@ execute if entity @e[distance=..4,type=interaction,tag=save.std] run tellraw @s 
 execute if entity @e[distance=..4,type=interaction,tag=save.corr] run tellraw @s "☆ This corridor... The (bad) memories of this very place make your determination shine."
 execute if entity @e[distance=..4,type=interaction,tag=save.swan] run function kilab:savepoints/swansave
 
-function kilab:savepoints/savebase
+# Then runs the base features (healing & spawn save)
+function kilab:savepoints/base

@@ -7,12 +7,12 @@
           "items": [
             "minecraft:cooked_beef"
           ],
-          "nbt": "{swanyaki:1}"
+          "nbt": "{swansCustom:\"entroyaki\"}"
         }
       }
     }
   },
   "rewards": {
-    "function": "kilab:items/swanyaki"
+    "function": "kilab:items/entroyaki"
   }
 }

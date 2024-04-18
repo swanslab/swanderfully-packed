@@ -1,4 +1,8 @@
-# Speed AoE
+# Passive effects of my weapon
+
+# Todo: Maybe add PvP detection and utilise attribute instead
+
+# Boosts speed to all player within 8 block radius
 effect give @a[distance=..8] speed 10 0 true
 
 # Light emission
