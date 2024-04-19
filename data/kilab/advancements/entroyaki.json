@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "kilab:items/entroyaki"
+    "function": "kilab:items/entroyaki/base"
   }
 }

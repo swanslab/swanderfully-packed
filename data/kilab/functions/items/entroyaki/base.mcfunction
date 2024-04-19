@@ -89,3 +89,6 @@ execute if entity @s[scores={kilab.entroyaki=23}] run tellraw @a[distance=..16] 
 # Lesser gift
 execute if entity @s[scores={kilab.entroyaki=24}] run give @a[distance=..16] netherite_scrap
 execute if entity @s[scores={kilab.entroyaki=24}] run tellraw @a[distance=..16] "☆ Well, better than nothing."
+
+# Revokes the advancement so it can be triggered again
+advancement revoke @s only kilab:entroyaki

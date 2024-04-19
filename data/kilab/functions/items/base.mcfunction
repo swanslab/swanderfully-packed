@@ -1,5 +1,5 @@
 # Sets delay for better performance
-schedule function kilab:items 3s
+schedule function kilab:items/base 3s
 
 # Utils for items
 

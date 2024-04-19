@@ -11,6 +11,6 @@
     }
   },
   "rewards": {
-    "function": "kilab:savepoints/int"
+    "function": "kilab:savepoint/int"
   }
 }

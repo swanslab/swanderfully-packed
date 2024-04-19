@@ -1,3 +1,5 @@
+# Extra effects for The Creator
+
 # Active sound
 playsound minecraft:block.bell.resonate master @a ~ ~ ~ 0.1
 
