@@ -26,10 +26,10 @@ player faunavigator attack randomly uniform 10 30
 player faunavigator jump randomly uniform 20 100
 
 # Regen since I don't wanna implement food eating
-effect give faunavigator minecraft:regeneration infinite 0
+effect give faunavigator regeneration infinite 0
 
 # Armor without armor
-effect give faunavigator minecraft:resistance infinite 3
+effect give faunavigator resistance infinite 3
 effect give faunavigator health_boost infinite 4
 effect give faunavigator instant_health 1 100
 

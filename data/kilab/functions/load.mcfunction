@@ -3,7 +3,7 @@
 # Makes the Faunavigator speaks
 execute as faunaceres run say ⏪ The Swanderfully Crafted Datapack (tm) has bean (re)loaded!
 
-# Faunav's combat data
+# Faunav's functionality data
 scoreboard objectives add fau.ded deathCount
 scoreboard players set faunaceres fau.ded 0
 scoreboard objectives add fau.kill playerKillCount

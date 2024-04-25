@@ -14,3 +14,6 @@ execute as @a[nbt={Inventory:[{id:"minecraft:nether_star",tag:{swansCustom:"star
 
 # Removes luck when star isn't in inventory
 execute as @a[nbt=!{Inventory:[{id:"minecraft:nether_star",tag:{swansCustom:"starlight"}}]}] run attribute @s generic.luck modifier remove 269306de-381c-4c3e-b867-626e27f60895
+
+# Temp fix for broken respawn perm buffs from Stellarity
+execute as @a run function stellarity:items/perm_buffs/respawn
