@@ -13,14 +13,14 @@ execute as @a[name="faunaceres",tag=!fau.water] at @s if block ~ ~ ~ water if bl
 execute as @a[name="faunaceres",tag=fau.water] at @s unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run tag @s remove fau.water
 
 # Stops if she's too close to someone
-execute as faunaceres at @s if entity @a[distance=..1,name=!"faunaceres",limit=1,sort=nearest] run player faunaceres stop
+execute as faunaceres at @s if entity @a[distance=..1,name=!"faunaceres",limit=1,sort=nearest,tag=!fau.nontarget] run player faunaceres stop
 
 # And moves again when they are away
-execute as faunaceres at @s if entity @a[distance=2..,name=!"faunaceres",limit=1,sort=nearest] run player faunaceres move forward
+execute as faunaceres at @s if entity @a[distance=2..,name=!"faunaceres",limit=1,sort=nearest,tag=!fau.nontarget] run player faunaceres move forward
 
 # Dynamic sprinting based on distance
-execute as faunaceres at @s if entity @a[distance=3..,name=!"faunaceres",limit=1,sort=nearest] run player faunaceres sprint
-execute as faunaceres at @s if entity @a[distance=..3,name=!"faunaceres",limit=1,sort=nearest] run player faunaceres unsprint
+execute as faunaceres at @s if entity @a[distance=3..,name=!"faunaceres",limit=1,sort=nearest,tag=!fau.nontarget] run player faunaceres sprint
+execute as faunaceres at @s if entity @a[distance=..3,name=!"faunaceres",limit=1,sort=nearest,tag=!fau.nontarget] run player faunaceres unsprint
 
 # TPs like wolf if she's too far away
 execute as @a[name="faunaceres",tag=!fau.lockon] at @s if entity @a[distance=16..,name=!"faunaceres",limit=1,sort=nearest,tag=!fau.nontarget] run tp @p[name=!"faunaceres"]

@@ -13,9 +13,9 @@ playsound block.amethyst_block.resonate master @a ~ ~ ~ 1 0.5
 playsound block.amethyst_block.resonate master @a ~ ~ ~ 1 0.6
 playsound block.amethyst_block.resonate master @a ~ ~ ~ 1 0.6
 
-# Heals ~6 HP and 5 Hunger+Saturation to all players within 8 block radius
-effect give @a[distance=..8] regeneration 1 4
+# Heals ~6 HP and 5 Hunger+Saturation to everyone that ain't monsters (hostile mobs) within 8 block radius
+effect give @e[distance=..8,type=!#kilab:monsters] regeneration 1 4
 effect give @a[distance=..8] saturation 1 4
 
 # Clears all negative effects as well
-execute as @a[distance=..8] run function kilab:utils/cleanse
+execute as @e[distance=..8,type=!#kilab:monsters] run function kilab:utils/cleanse
