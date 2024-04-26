@@ -22,5 +22,5 @@ execute as faunaceres at @s if entity @a[distance=2..,name=!"faunaceres",limit=1
 execute as faunaceres at @s if entity @a[distance=3..,name=!"faunaceres",limit=1,sort=nearest] run player faunaceres sprint
 execute as faunaceres at @s if entity @a[distance=..3,name=!"faunaceres",limit=1,sort=nearest] run player faunaceres unsprint
 
-# TPs like wolf if she's too far way
-execute as @a[name="faunaceres",tag=!fau.lockon] at @s if entity @a[distance=16..,name=!"faunaceres",limit=1,sort=nearest] run tp @p[name=!"faunaceres"]
+# TPs like wolf if she's too far away
+execute as @a[name="faunaceres",tag=!fau.lockon] at @s if entity @a[distance=16..,name=!"faunaceres",limit=1,sort=nearest,tag=!fau.nontarget] run tp @p[name=!"faunaceres"]
