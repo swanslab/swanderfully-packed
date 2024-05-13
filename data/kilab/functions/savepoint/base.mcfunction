@@ -5,4 +5,3 @@ effect give @s regeneration 2 5 true
 effect give @s saturation 30 0 true
 spawnpoint @s
 tellraw @s[tag=!kilab.creator] "☆ Health and hunger fully restored! Spawnpoint saved, too!"
-tellraw @s[tag=kilab.creator] "☆ And... I'm fully recovered! Spawnpoint saved as well!"

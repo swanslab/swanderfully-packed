@@ -1,7 +1,7 @@
 # On load commands to set things up
 
 # Makes the Faunavigator speaks
-execute as faunaceres run say ⏪ The Swanderfully Crafted Datapack (tm) has bean (re)loaded!
+execute as faunaceres run say The Swanderfully Crafted Datapack™️ has bean reloaded!
 
 # Faunav's functionality data
 scoreboard objectives add fau.ded deathCount
