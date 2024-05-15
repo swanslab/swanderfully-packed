@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "faukill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "team": "faunav"
+        }
+      }
+    },
+    "fauded": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "team": "faunav"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "faukill",
+      "fauded"
+    ]
+  ],
+  "rewards": {
+    "function": "kilab:faubot/pvp/stop"
+  }
+}

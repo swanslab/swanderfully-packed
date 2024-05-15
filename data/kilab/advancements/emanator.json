@@ -1,0 +1,23 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "mainhand": {
+                "items": [
+                  "minecraft:netherite_sword"
+                ],
+                "nbt": "{swansCustom:\"emanator\"}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "kilab:items/emanator/heal_active"
+    }
+  }
+  

@@ -1,11 +1,9 @@
 # On load commands to set things up
 
 # Makes the Faunavigator speaks
-execute as faunaceres run say The Swanderfully Crafted Datapack™️ has bean reloaded!
+execute as faunaceres run say The Swanderfully Crafted Datapack™ has bean reloaded!
 
 # Faunav's functionality data
-scoreboard objectives add fau.ded deathCount
-scoreboard objectives add fau.kill playerKillCount
 scoreboard objectives add fau.wait dummy
 scoreboard objectives add fau.healtimer dummy
 
@@ -18,6 +16,5 @@ scoreboard objectives add kilab.swansave dummy
 # Records when players leave the game for skin refresher
 scoreboard objectives add kilab.join minecraft.custom:minecraft.leave_game
 
-# Tracks Emanator's uses
-scoreboard objectives add emanator.use minecraft.used:minecraft.netherite_sword
+# Emanator's heal RNG
 scoreboard objectives add emanator.heal dummy

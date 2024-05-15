@@ -1,5 +1,5 @@
 { 
     "values": [
-        "kilab:tick","kilab:faubot/base","kilab:items/emanator/loop"
+        "kilab:tick","kilab:faubot/base"
     ]
 }

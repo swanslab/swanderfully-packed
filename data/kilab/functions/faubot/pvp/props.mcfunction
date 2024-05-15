@@ -1,6 +1,9 @@
 # PvP Properties
 execute as faunavigator run say Here I come!
 
+# Revokes advancement so it can be triggered again
+advancement revoke @a only kilab:faupvp
+
 # Failsafes
 schedule clear kilab:faubot/pvp/wait
 gamemode survival faunavigator
